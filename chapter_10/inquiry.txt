@@ -1,0 +1,7 @@
+I like Python.
+I like C.
+I like Java.
+I like Python language.
+I like C++ language.
+I like C language.
+I like Java language.

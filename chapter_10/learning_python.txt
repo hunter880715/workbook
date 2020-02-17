@@ -1,0 +1,3 @@
+In Python you can write your favorite games.
+In Python you can write handy tools.
+In Python you can spread your mind.
