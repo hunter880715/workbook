@@ -1,0 +1,5 @@
+# 天天向上的力量
+
+dayup = pow(1.001, 365)
+daydown = pow(0.999, 365)
+print('day up: {:.2f}, day down: {:.2f}'.format(dayup, daydown))

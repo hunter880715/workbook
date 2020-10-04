@@ -1,0 +1,29 @@
+HTML负责数据组织；CSS负责样式表达。
+HTML使用标签形式，<tag>...</tag>；标签形式为：<li>...</li>
+CSS使用键值对形式，key:value；标签形式为：color:red;font-size:20px
+
+HTML和不同的CSS的组合，可以展示不同的风格。
+CSS和不同的HTML的组合，可以展示不同的风格。
+CSS对HTML中某一“类”内容定义风格。
+CSS可以单独存储成文件，或书写在HTML中。
+
+JavaScript：一种轻量级的脚本型编程语言；
+为web增加了交互、动态效果和行为功能；
+JS由浏览器执行，访问时会被下载到本地；
+JS可以卸载HTML文件中，也可以单独为.js文件。
+
+HTML常用标签：
+  标题：h1,h2,h3,h4,h5……
+  段落：p
+  换行：br
+  容器：div,span
+  表格：table,tr,td
+  列表：ul,ol,li
+  连接：a
+  图片：img
+  表单：input
+
+CSS的三种写法：
+  行内模式：在标签的style属性中书写
+  页内模式：在HTML网页中使用独立的<style>标签书写
+  外部模式：单独在CSS文件中书写

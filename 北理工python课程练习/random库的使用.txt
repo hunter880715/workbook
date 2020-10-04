@@ -1,0 +1,49 @@
+random库：是使用随机数的python标准库。
+伪随机数：采用梅森旋转算法生成的（伪）随机序列中元素
+random库主要用于生成随机数；使用直接 import random 即可。
+random库包含两类函数，常用共8个：
+1：基本随机数函数：
+seed(), random()
+
+2：扩展随机数函数：
+randint(), getrandbits(), uniform(), randrange(), choice(), shuffle()
+
+    函数                      概述
+
+seed(a=None)     初始化给定的随机数种子，默认为当前系统时间 
+                 >>>random.seed(10) # 产生种子10对应的序列
+
+
+random()         生成一个(0.0, 1.0)之间的随机小数
+                 >>>random.random()
+                 0.5714025946899135
+
+
+    扩展函数                  概述
+
+randint(a, b)    生成一个[a, b]之间的整数
+                 >>>random.randint(10, 100)
+                 64
+
+randrange(m, n[,k])    生成一个[m, n]之间以k为补偿的随机整数
+                       >>>random.randrange(10, 100, 10)
+                       80
+
+getrandbits(k)    生成一个k比特长的随机整数
+                  >>>random.getrandbite(16)
+                  37855
+
+uniform(a, b)     生成一个[a, b]之间的随机小数
+                  >>>random.uniform(10, 100)
+                  13.096321648808136
+
+choice(seq)       从序列seq中随机选择一个元素
+                  >>>random.choice([1, 2, 3, 4, 5, 6, 7, 8])
+                  6
+
+shuffle(seq)      将序列seq中元素随机排列，返回打乱后的序列
+                  >>>s=[1, 2, 3, 4, 5, 6, 7, 8])
+                     random.shuffle(s)
+                     print(s)
+                     [3, 2, 6, 5, 4, 8, 7, 1]
+

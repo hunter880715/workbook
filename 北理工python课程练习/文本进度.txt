@@ -1,0 +1,23 @@
+文本进度条：
+采用字符串方式打印可以动态表花的文本进度条
+进度条需要能在一行中逐渐变化
+
+sleep() 模拟一个持续的进度
+
+文本进度条单行进度刷新：
+刷新的本质是：用后打印的字符覆盖之前的字符
+不能换行：print()需要被控制
+要能回退：使用\r使打印后光标退回到之前的位置，\r使刷新的关键。
+
+文本进度条的不同设计函数
+
+    设计名称          趋势          设计函数
+     Linear         Constant      f(x) = x
+   Early Pause      Speeds up     f(x) = x+(1-sin(x*π*2+π/2)/-8
+   Late Pause       Slows down    f(x) = x+(1-sin(x*π*2+π/2)/8
+   Slow Wavy        Constant      f(x) = x+sin(x*π*5)/20
+   Fast Wavy        Constant      f(x) = x+sin(x*π*20)/80
+     Power          Speeds up     f(x) = (x+(1-x)*0.03)2
+  Inverse Power     Slows up      f(x) = 1+(1-x)1.5次方*-1
+   Fast Power       Speeds up     f(x) = (x+(1-x)/2)8次方
+Inverse Fasr Power  Slows up      f(x) = 1+(1-x)3*-1
